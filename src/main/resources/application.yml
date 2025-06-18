@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+federation:
+  issuer: "https://federation.blueyonder.com"
+  trust-anchor: "https://federation.blueyonder.com"
+  idps:
+    - name: ikea
+      wellKnown: "https://login.microsoftonline.com/ikea/.well-known/openid-federation"
+    - name: asda
+      wellKnown: "https://asda.okta.com/.well-known/openid-federation"
+    - name: heineken
+      wellKnown: "https://login.pingidentity.com/heineken/.well-known/openid-federation"
+  rps:
+    - name: OrderTracker
+    - name: WarehousePlanner
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  cache:
+    type: simple
+
+logging:
+  level:
+    com.blueyonder: DEBUG
+
