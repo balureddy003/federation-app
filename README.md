@@ -1,6 +1,7 @@
 # FederationApp
 
 This project provides a simplified example of an OpenID Federation 1.0 implementation using Spring Boot.
+<<<<<<< 8sx8qy-codex/build-production-grade-openid-federation-app
 
 ## Running in VS Code
 
@@ -17,3 +18,5 @@ This project provides a simplified example of an OpenID Federation 1.0 implement
    java -jar target/FederationApp-0.0.1-SNAPSHOT.jar
    ```
 6. Browse the API at `http://localhost:8080/swagger-ui.html`.
+=======
+>>>>>>> main
